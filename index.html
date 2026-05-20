@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Morgan – Creative Freelancer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__logo">AM</div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Hello, I'm</p>
+      <h1 class="hero__name">Alex Morgan</h1>
+      <p class="hero__tagline">Brand Designer &amp; Visual Storyteller</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+    <div class="hero__image">
+      <img src="https://placehold.co/480x560/1a1a2e/e0e0ff?text=Alex+Morgan" alt="Alex Morgan" />
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container two-col">
+      <div class="about__image">
+        <img src="https://placehold.co/420x480/16213e/e0e0ff?text=About+Me" alt="About Alex" />
+      </div>
+      <div class="about__text">
+        <span class="label">About Me</span>
+        <h2>Turning ideas into <em>visual experiences</em></h2>
+        <p>
+          I'm a freelance brand designer based in New York City with over 8 years of experience
+          helping startups and established businesses craft compelling visual identities.
+          My work sits at the intersection of strategy and aesthetics — I don't just make things
+          look good, I make them work.
+        </p>
+        <p>
+          When I'm not designing, you'll find me hiking, shooting film photography, or obsessing
+          over great typography.
+        </p>
+        <div class="stats">
+          <div class="stat"><span>120+</span><p>Projects delivered</p></div>
+          <div class="stat"><span>8</span><p>Years experience</p></div>
+          <div class="stat"><span>40+</span><p>Happy clients</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+    <div class="container">
+      <span class="label center">What I Do</span>
+      <h2 class="center">Services</h2>
+      <div class="services__grid">
+        <div class="card">
+          <div class="card__icon">✦</div>
+          <h3>Brand Identity</h3>
+          <p>Logo design, color systems, typography, and brand guidelines that make your business memorable.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">◈</div>
+          <h3>Web Design</h3>
+          <p>Clean, conversion-focused website designs built for modern audiences — desktop and mobile.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">▣</div>
+          <h3>Print &amp; Packaging</h3>
+          <p>Business cards, brochures, product packaging, and marketing collateral that stand out on the shelf.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">◎</div>
+          <h3>Social Media Kits</h3>
+          <p>Cohesive template systems so your brand looks polished across every platform and post.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <span class="label center">Portfolio</span>
+      <h2 class="center">Selected Work</h2>
+      <div class="gallery__grid">
+        <div class="gallery__item tall">
+          <img src="https://placehold.co/600x800/0f3460/e0e0ff?text=Project+01" alt="Project 01" />
+          <div class="gallery__overlay"><p>Bloom Co. — Brand Identity</p></div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://placehold.co/600x400/533483/e0e0ff?text=Project+02" alt="Project 02" />
+          <div class="gallery__overlay"><p>Nori Kitchen — Packaging</p></div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://placehold.co/600x400/1a1a2e/e0e0ff?text=Project+03" alt="Project 03" />
+          <div class="gallery__overlay"><p>Arco Studio — Web Design</p></div>
+        </div>
+        <div class="gallery__item wide">
+          <img src="https://placehold.co/1200x500/16213e/e0e0ff?text=Project+04" alt="Project 04" />
+          <div class="gallery__overlay"><p>Helio App — UI Kit &amp; Branding</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <span class="label">Contact</span>
+        <h2>Let's work together</h2>
+        <p>Have a project in mind? Reach out — I'd love to hear about it.</p>
+        <ul class="contact__list">
+          <li>
+            <span class="contact__icon">✉</span>
+            <a href="mailto:alex@morgan.design">alex@morgan.design</a>
+          </li>
+          <li>
+            <span class="contact__icon">✆</span>
+            <a href="tel:+12125550198">+1 (212) 555-0198</a>
+          </li>
+          <li>
+            <span class="contact__icon">⌖</span>
+            New York City, USA
+          </li>
+        </ul>
+        <div class="social">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Dribbble">dr</a>
+          <a href="#" aria-label="Behance">be</a>
+        </div>
+      </div>
+      <form class="contact__form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--full">Send Message</button>
+        <p id="form-success" class="form-success" hidden>Message sent! I'll be in touch soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Alex Morgan. Crafted with care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
